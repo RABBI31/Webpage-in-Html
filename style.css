@@ -8,13 +8,24 @@ body{
 }
 .container{
     background-color: #fff;
+    position: relative;
+   
 }
 .wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
+  
+ 
+
 }
 
 /* first card header part start */
+.container1{
+    animation: zoom-in-zoom-ou 1s ease infinite;
+       z-index: 1;
+}
+
+
 .header-1{
     text-align: center;
     margin-top: 20px;
@@ -115,3 +126,158 @@ body{
     font-size: 5x;
 }
 /* first card body part end */
+
+/* Second card header part start */
+
+.container2{
+    margin-top: 50px;
+    margin-right: 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) ;
+    z-index: 2;
+}
+.hero-part{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/3.jpg');
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.hero-content{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    gap: 20px;
+}
+.hero-content h3{
+    padding: 10px;
+    font-size: 10px;
+}
+.hero-navbar{
+    margin-left: 20px;
+}
+.hero-navbar a{
+    padding: 10px;
+    color: #fff;
+    font-size: 10px;
+    text-decoration: none;
+}
+.hero-navbar button{
+    margin: 5px;
+    font-size: 10px;
+    background-color: rgba(0, 128, 0, 0.635);
+    border: 0;
+    padding: 5px;
+    color: #fff;
+}
+
+.hero-header{
+    margin: 40px;
+    color: #fff;
+}
+.hero-header h1{
+    margin-right: 100px;
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+.hero-header p{
+    font-size: 10px;
+    text-align: left;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+.hero-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: #fff;
+    border-radius: 5%;
+    box-shadow:  0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 10%;
+    overflow: hidden;
+    padding: 30px;
+    margin-left:  20px;
+    margin-right: 20px ;
+   
+}
+.hero-grid div{
+    font-size: 10px;
+    border-right: 1px solid gray;
+    
+}
+.hero-grid div:nth-child(4){
+    border-right: none;
+}
+.hero-grid div:nth-child(5){
+    border-right: none;
+}
+.hero-grid button{
+    background-color: rgba(0, 128, 0, 0.725);
+    border: none;
+    padding: 5px 25px ;
+    border-radius: 10%;
+    color: #fff;
+    font-size: 10px;
+}
+ .body-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #fff;
+    border-radius: 5%;
+    text-align: center;
+    gap: 10px;
+    overflow: hidden;
+    padding: 5px 20px;
+    margin: 10px 40px;
+}
+.body-2 img{
+    width: 100%;
+} 
+.body-2-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    background-color: #fff;
+    padding: 5px 20px;
+    margin: 10px 40px;
+    gap: 20px;
+}
+.body-2-2 img{
+    width: 100%;
+}  
+.body-2-2 p {
+    color:rgba(0, 128, 0, 0.774) ;
+    font-size: 8px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+.body-2-2 h4{
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+.body-2-2 .para{
+    font-size: 9px;
+    color: rgba(128, 128, 128, 0.866);
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.body-2-2-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    background-color: #fff;
+    gap: 20px;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.body-2-2-1 h3{
+    margin: 20px 20px 0px 20px;
+    color:rgba(0, 128, 0, 0.774)  ;
+}
+.body-2-2-1 p{
+    color: black;
+}
+
+/* Second card header part end */
